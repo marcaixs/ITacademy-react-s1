@@ -1,0 +1,97 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width:1200px;
+}
+.parent{
+    display:flex;
+    flex-flow:column;
+}
+    .black1{
+        background: black;
+        display:flex;
+        flex-flow:column nowrap;
+    }
+        .grey1{
+            background: rgb(59, 59, 109);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+            .red1{
+                background: rgb(221, 70, 70);
+                flex: 1 1 auto;
+                cursor:pointer;
+                transition: transform .2s;
+            }
+            .red1:hover{
+                transform: scale(1.3);
+                background: purple;
+            }
+            .red2{
+                background: rgb(221, 70, 70);
+                flex: 5 1 auto;
+            }
+            .red3{
+                background: rgb(221, 70, 70);
+                flex: 1 1 auto;
+            }
+        .orange{
+            background: rgb(255, 129, 56);
+        }
+            .yellow1{
+                background:rgb(245, 245, 79);
+            } 
+
+    .black2{
+        background: black;
+        display: flex;
+    }
+        .grey2{
+            background: rgb(59, 59, 109);
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .darkblue{
+                background: rgb(50, 88, 255);
+                flex: 1 1 40%;
+            }
+            .lightblue{
+                background: lightblue;
+                flex: 1 1 100%;
+            }
+        .sidered{
+            background: rgb(221, 70, 70);
+            flex: 1 1 auto;
+        }
+            .yellow2{
+                background:rgb(245, 245, 79);
+            }        
+    .black3{
+        background: black;
+    }
+        .yellow3{
+            background:rgb(245, 245, 79);  
+        }
+
+/* Tablet */
+@media all and (max-width: 768px){
+    .black2{
+        flex-direction: column;
+        background: yellow;
+    }
+    body{
+        background: brown;
+    }
+}
+
+/*Phone*/
+@media all and (max-width: 576px){
+    .grey2{
+        flex-direction: column;
+    }
+    body{
+        background: yellowgreen;
+    }
+}

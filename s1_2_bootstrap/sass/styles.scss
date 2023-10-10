@@ -1,0 +1,70 @@
+// Change primary and secondary colors
+$theme-colors: (
+  "primary":    #5265E1,
+  "secondary":  #FA5959
+);
+
+//Text style
+.text-style{
+    font-family: Rubik,sans-serif;
+    font-size: 18px;
+    color:rgb(146, 144, 168);
+    margin: 20px;
+}
+h1, h2, h3, h4{
+    color:rgb(32, 25, 61);
+    font-weight: bold;
+}
+
+//Navbar
+.nav-item{
+    padding: 5px 15px;
+}
+#login-button{
+    color: white;
+    padding: 5px 30px
+}
+
+//Hero section
+.hero-row{
+    flex-direction: row-reverse;
+}
+
+//features
+.nav-link{
+    color: grey
+    
+}
+
+.nav-link.active {
+    padding-bottom: 20px;
+    border-bottom:solid 1px rgb(219, 55, 55);
+    
+}
+
+//cards
+.card{
+    padding-top: 30px;
+    color:grey;
+    font-size: 14px;
+    margin: transparent;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-title{
+    color:rgb(32, 25, 61);
+    font-weight: bold;
+
+}
+
+//accordion
+.accordion-button.collapsed::after{
+    background-image: url("../images/icon-arrow.svg");
+}
+
+//footer
+.text-footer {
+    color: rgb(237, 238, 248);
+    font-family: Rubik,sans-serif;
+}
+ 
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

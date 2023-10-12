@@ -1,7 +1,10 @@
 // Change primary and secondary colors
+$primary: #5265E1;
+$secondary: #FA5959;
+
 $theme-colors: (
-  "primary":    #5265E1,
-  "secondary":  #FA5959
+    "primary": $primary,
+    "secondary": $secondary
 );
 
 //Text style
@@ -66,5 +69,37 @@ h1, h2, h3, h4{
     color: rgb(237, 238, 248);
     font-family: Rubik,sans-serif;
 }
- 
+
+//sdfgsdf
+.nav-link:hover {
+    color: $secondary !important;
+};
+  
+.accordion-button:hover {
+    color: $secondary !important;
+};
+  
+ .btn-red:hover {
+    background-color: white !important;
+    border-color: $secondary;
+    border-width: 1px;
+    color: $secondary !important;
+};
+  
+.btn-white:hover {
+    background-color: white !important;
+    border-color: $primary;
+    border-width: 1px;
+    color: $primary !important;
+}
+  
+.btn-firefox:hover {
+    border-color: #000 !important;
+    border-width: 1px;
+};
+
+.underline:hover {
+    text-decoration: underline red;
+}
+  
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

@@ -78,13 +78,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 .btn-firefox:hover {
-  border-color: #000 !important;
+  border-color: black !important;
   border-width: 1px;
 }
 
-.underline:hover {
-  -webkit-text-decoration: underline #FA5959;
-          text-decoration: underline #FA5959;
+.underline:active {
+  -webkit-text-decoration: underline #FA5959 !important;
+          text-decoration: underline #FA5959 !important;
 }
 
 /*!
